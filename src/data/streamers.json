@@ -3,14 +3,14 @@
     "login": "fahxey",
     "displayName": "Fahxey",
     "twitchUrl": "https://twitch.tv/fahxey",
-    "avatarLogo": "logo2.png",
-    "bio": "Featured channel for flagship streams, big collabs, and prime-time live events."
+    "avatarLogo": "logo.png",
+    "bio": "This is my main channel where I go live for Rocket League, ARC Raiders, and collab streams with the VANTAxxTV."
   },
   {
     "login": "vantaxxtv",
     "displayName": "VantaXXTV",
     "twitchUrl": "https://twitch.tv/vantaxxtv",
-    "avatarLogo": "logo.png",
+    "avatarLogo": "Vanta.jpg",
     "bio": "Official channel for live broadcasts, collabs, and weekly community streams."
   }
 ]
