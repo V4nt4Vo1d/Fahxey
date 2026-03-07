@@ -1,0 +1,6 @@
+
+.glow-logo {
+  filter:
+    drop-shadow(0 0 8px rgba(255, 120, 0, 0.75))
+    drop-shadow(0 0 20px rgba(255, 80, 0, 0.45));
+}
