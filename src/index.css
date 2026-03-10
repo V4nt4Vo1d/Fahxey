@@ -1,5 +1,6 @@
 @import './styles/fire.css';
 @import './styles/glow.css';
+@import './styles/pride.css';
 
 @tailwind base;
 @tailwind components;

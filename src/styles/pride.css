@@ -1,0 +1,106 @@
+/* Pride page motion and background layers */
+.pride-video-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.34;
+  filter: saturate(1.35) contrast(1.08);
+}
+
+.pride-panel {
+  animation: pride-enter 700ms ease-out both;
+}
+
+.pride-ambient-orb {
+  animation: pride-orb-float 9s ease-in-out infinite;
+}
+
+.pride-rainbow-stripe {
+  background-size: 210% 210%;
+  animation: pride-stripe-flow 7s ease-in-out infinite;
+}
+
+.pride-value-card {
+  transform: translateY(8px);
+  opacity: 0;
+  animation: pride-card-rise 520ms ease-out forwards;
+  transition: transform 260ms ease, box-shadow 260ms ease, background-color 260ms ease;
+}
+
+.pride-value-card:nth-child(1) {
+  animation-delay: 120ms;
+}
+
+.pride-value-card:nth-child(2) {
+  animation-delay: 220ms;
+}
+
+.pride-value-card:nth-child(3) {
+  animation-delay: 320ms;
+}
+
+.pride-value-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.12);
+}
+
+@keyframes pride-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes pride-orb-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -10px, 0) scale(1.05);
+  }
+}
+
+@keyframes pride-stripe-flow {
+  0%,
+  100% {
+    background-position: 0% 50%;
+    filter: saturate(1.15) brightness(1);
+  }
+  50% {
+    background-position: 100% 50%;
+    filter: saturate(1.35) brightness(1.08);
+  }
+}
+
+@keyframes pride-card-rise {
+  from {
+    transform: translateY(8px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pride-panel,
+  .pride-ambient-orb,
+  .pride-rainbow-stripe,
+  .pride-value-card {
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  .pride-value-card:hover {
+    transform: none;
+  }
+}

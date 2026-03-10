@@ -1,5 +1,6 @@
 
 import Navbar from '../components/Navbar'
+import { Link } from 'react-router-dom'
 
 export default function Home() {
   const heroLogo = `${import.meta.env.BASE_URL}assets/logos/logo.png`
@@ -10,7 +11,13 @@ export default function Home() {
       <Navbar />
 
       <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col items-center justify-center px-6 pt-24">
-        <img src={heroLogo} className="mb-7 w-36 sm:w-44 glow-logo" alt="Fahxey logo" />
+        <Link
+          to="/pride"
+          aria-label="Open Fahxey Pride page"
+          className="mb-7 block rounded-full transition-transform duration-300 hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+        >
+          <img src={heroLogo} className="w-36 sm:w-44 glow-logo" alt="Fahxey logo" />
+        </Link>
 
         <p className="mb-3 text-xs uppercase tracking-[0.45em] text-ember">Live Broadcasting Network</p>
 
