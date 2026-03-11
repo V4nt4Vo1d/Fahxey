@@ -12,7 +12,7 @@ export default function Home() {
 
       <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col items-center justify-center px-6 pt-24">
         <Link
-          to="/pride"
+          to="/"
           aria-label="Open Fahxey Pride page"
           className="mb-7 block rounded-full transition-transform duration-300 hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
         >
