@@ -24,6 +24,12 @@ export default function Pride() {
             videoRef.current.playbackRate = 0.72
           }
         }}
+        onEnded={() => {
+          if (videoRef.current) {
+            videoRef.current.currentTime = 0
+            void videoRef.current.play()
+          }
+        }}
       >
         <source src={rainbowVideo} type="video/mp4" />
       </video>
