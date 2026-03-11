@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 
 export default function Pride() {
   const videoRef = useRef<HTMLVideoElement>(null)
-  const rainbowVideo = '/assets/logos/gay.mp4'
+  const rainbowVideo = `${import.meta.env.BASE_URL}assets/logos/gay.mp4`
 
   return (
     <div className="relative min-h-screen overflow-hidden text-zinc-50">
