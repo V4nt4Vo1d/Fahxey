@@ -2,6 +2,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import StreamerCard from '../components/StreamerCard'
 import Navbar from '../components/Navbar'
+import FireOverlay from '../components/FireOverlay'
 import streamerData from '../data/streamers.json'
 import { buildTwitchEmbedUrl, getLiveStreams, type TwitchStream } from '../lib/twitch'
 
@@ -86,7 +87,7 @@ export default function Streamers() {
 
   return (
     <div className="min-h-screen px-5 pb-14 pt-20 sm:px-10">
-      <div className="fire-bg" />
+      <FireOverlay />
       <Navbar />
 
       <section className="mx-auto mt-10 w-full max-w-6xl">

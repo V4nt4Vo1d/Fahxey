@@ -1,9 +1,10 @@
 import Navbar from '../components/Navbar'
+import FireOverlay from '../components/FireOverlay'
 
 export default function About() {
   return (
     <div className="min-h-screen px-5 pb-16 pt-20 text-zinc-200 sm:px-10">
-      <div className="fire-bg" />
+      <FireOverlay />
       <Navbar />
 
       <main className="mx-auto mt-10 w-full max-w-3xl space-y-10 rounded-3xl border border-white/10 bg-black/45 p-6 sm:p-10">

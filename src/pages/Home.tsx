@@ -1,5 +1,6 @@
 
 import Navbar from '../components/Navbar'
+import FireOverlay from '../components/FireOverlay'
 import { Link } from 'react-router-dom'
 
 export default function Home() {
@@ -7,7 +8,7 @@ export default function Home() {
 
   return (
     <div className="relative min-h-screen overflow-hidden text-center text-white">
-      <div className="fire-bg" />
+      <FireOverlay />
       <Navbar />
 
       <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col items-center justify-center px-6 pt-24">
